@@ -14,14 +14,12 @@
     <button type="submit" class="btn btn-success">Add number</button>
 </form>
 <form action="/container" method="post">
-
+<br>
     <input type="string" name="delete" class="form-control">
     <button type="submit" class="btn btn-success">Delete number</button>
 </form>
-<div th:each="number:${number}">
-    <a th:text="${number.getNumber()}">dfg</a>
-</div>
-
+<br>
+<a href="/container/result">Result</a>
 </body>
 
 </html>
