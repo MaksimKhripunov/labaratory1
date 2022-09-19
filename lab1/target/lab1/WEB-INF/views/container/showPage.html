@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>My app</title>
+</head>
+
+<body>
+
+<form action="/container" method="post">
+    <h1>Working with container</h1>
+    <input type="string" name="add" class="form-control">
+    <button type="submit" class="btn btn-success">Add number</button>
+</form>
+<form action="/container" method="post">
+
+    <input type="string" name="delete" class="form-control">
+    <button type="submit" class="btn btn-success">Delete number</button>
+</form>
+<div th:each="number:${number}">
+    <a th:text="${number.getNumber()}">dfg</a>
+</div>
+
+</body>
+
+</html>
